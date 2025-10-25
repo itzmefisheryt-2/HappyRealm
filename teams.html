@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teams | Happy Realm</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🛡️ Teams</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="bases.html">Bases</a>
+  </nav>
+
+  <div id="teamsContainer"></div>
+
+  <script src="data.js"></script>
+  <script>
+    const container = document.getElementById('teamsContainer');
+    teams.forEach(team => {
+      const div = document.createElement('div');
+      div.className = 'team';
+      div.innerHTML = `
+        <h2>${team.name}</h2>
+        <p><strong>Members:</strong> ${team.members.join(', ')}</p>
+        <p><strong>Bases:</strong> ${team.bases.join(', ')}</p>
+      `;
+      container.appendChild(div);
+    });
+  </script>
+</body>
+</html>
