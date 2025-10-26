@@ -1,16 +1,16 @@
 const bases = [
   {
-    name: "Ice Base",
-    owner: "Alex",
-    members: ["Steve", "EnderBoy"],
-    team: "Frost Clan",
-    coords: "234 / 64 / -512"
+    name: "Mushroom Base",
+    owner: "Luke & Ashley",
+    members: ["Luke & Ashley"],
+    team: "???",
+    coords: "-142 / 38 / 2074"
   },
   {
-    name: "Desert Camp",
-    owner: "Blaze",
-    members: ["Ember"],
-    team: "Sand Rats",
-    coords: "-123 / 72 / 88"
+    name: "Villager Base",
+    owner: "Cruz & Grayson",
+    members: ["Cruz & Grayson"],
+    team: "???",
+    coords: "-1245 72 1200"
   }
 ];
