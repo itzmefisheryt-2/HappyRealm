@@ -14,16 +14,3 @@ const bases = [
     coords: "-123 / 72 / 88"
   }
 ];
-
-const teams = [
-  {
-    name: "Frost Clan",
-    members: ["Alex", "Steve", "EnderBoy"],
-    bases: ["Ice Base"]
-  },
-  {
-    name: "Sand Rats",
-    members: ["Blaze", "Ember"],
-    bases: ["Desert Camp"]
-  }
-];
