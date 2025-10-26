@@ -1,17 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Happy Realm</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Realm Bases</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(to bottom, #1e1e1e, #2c2c2c);
+      color: #eee;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #4fc3f7;
+      margin-bottom: 30px;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 90%;
+      max-width: 1000px;
+      margin: 0 auto;
+      background-color: #2a2a2a;
+      border: 2px solid #555;
+    }
+
+    th, td {
+      padding: 12px 15px;
+      border: 1px solid #555;
+      text-align: center;
+    }
+
+    th {
+      background-color: #333;
+      color: #ffcc00;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #262626;
+    }
+
+    tr:hover {
+      background-color: #444;
+    }
+
+    @media screen and (max-width: 600px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+
+      th {
+        display: none;
+      }
+
+      td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+      }
+
+      td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: bold;
+        text-align: left;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>🏰 Welcome to Happy Realm</h1>
-  <nav>
-    <a href="bases.html">Bases</a>
-  </nav>
-  <p>Track all bases, owners, and teams in one place!</p>
+  <h1>🏰 Happy Realm Bases & Locations</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Base / Location</th>
+        <th>Owner</th>
+        <th>Members</th>
+        <th>Coords (X / Y / Z)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-label="Base / Location">Mushroom Base</td>
+        <td data-label="Owner">Luke & Ashley</td>
+        <td data-label="Members">Luke & Ashley</td>
+        <td data-label="Coords">-142 / 38 / 2074</td>
+      </tr>
+      <tr>
+        <td data-label="Base / Location">Villager Base</td>
+        <td data-label="Owner">Cruz & Grayson</td>
+        <td data-label="Members">Cruz & Grayson</td>
+        <td data-label="Coords">-1245 / 72 / 1200</td>
+      </tr>
+      <tr>
+        <td data-label="Base / Location">Ethan’s Base</td>
+        <td data-label="Owner">Ethan</td>
+        <td data-label="Members">—</td>
+        <td data-label="Coords">1669 / 112 / 1022</td>
+      </tr>
+      <tr>
+        <td data-label="Base / Location">Addison’s Base</td>
+        <td data-label="Owner">Addison</td>
+        <td data-label="Members">—</td>
+        <td data-label="Coords">971 / ? / 462</td>
+      </tr>
+      <tr>
+        <td data-label="Base / Location">Stronghold (Stairway)</td>
+        <td data-label="Owner">—</td>
+        <td data-label="Members">—</td>
+        <td data-label="Coords">-1436 / ? / 804</td>
+      </tr>
+    </tbody>
+  </table>
 </body>
 </html>
-
